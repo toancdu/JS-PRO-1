@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Function-RPS-Gamer</title>
+</head>
+<body>
+  <h1>Welcome to game Rocks-Paper-Scisor!</h1>
+  <p>Rock Paper Scisor</p>
+  <!-- Create button -->
+  <button onclick="
+    playGame('Rock');
+    ">Rock</button>
+ <button onclick="
+    playGame('Paper');
+    ">Paper</button>
+  <button onclick="
+    playGame('Scisor');
+    ">Scisor</button>
+    
+
+ <script>
+   /* Create function */
+  function playGame(playerMove){
+    const computerMove=pickComputerMove();
+    let result='';
+
+    /* Scisor */
+    if (playerMove==='Scisor'){
+      if(computerMove==='Rock'){
+        result='You loose!';
+      }else if (computerMove==='Paper'){
+        result='You win!';
+      }else if (computerMove==='Scisor'){
+        result='You tie!';
+      }
+
+      /* Paper */
+    }else if (playerMove==='Paper'){
+      if(computerMove==='Rock'){
+        result='You win!';
+      }else if (computerMove==='Paper'){
+        result='You tie!';
+      }else if (computerMove==='Scisor'){
+        result='You loose';
+      }
+
+      /* Rock */
+    }else if (playerMove==='Rock'){
+      if(computerMove==='Rock'){
+        result='Tie';
+      }else if (computerMove==='Paper'){
+        result='You loose!';
+      }else if (computerMove==='Scisor'){
+        result='You win!';
+      }
+    }
+
+    /* Alert */
+    alert(`You pick ${playerMove}, 
+    computer pick ${computerMove}, so you ${result}`);
+  }
+
+  /* Function pickComputerMove */
+  function pickComputerMove(){
+    const randomNumber=Math.random();
+    let computerMove='';
+    if (randomNumber>=0 && randomNumber<1/3){
+      computerMove='Rock';
+    }
+    else if(randomNumber>=1/3 && randomNumber<2/3){
+      computerMove='Paper';
+    }
+    else if(randomNumber>=2/3 && randomNumber<1){
+      computerMove='Scisor';
+    }
+      return computerMove;
+  }
+ </script>
+ <p><a href="Click here">Click here </a>to see the final version of the project</p>
+</body>
+</html>

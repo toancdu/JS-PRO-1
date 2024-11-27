@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boolean </title>
+</head>
+<body>
+  <h1>Welcome to my page!</h1>
+  <script>
+    true
+    false
+    console.log(3>5)
+    console.log(5!=="5.00")
+
+    if(true){
+      console.log("You are good programmer")
+    } else{
+      console.log("You are bad programmer")
+    }
+    const age=30
+    if(age>=18){
+      console.log("You can drive")
+      console.log("congrats!")
+    }
+    else if(age>=14){
+      console.log("Almost there!")
+    }
+    else{
+      console.log("You can not drive")
+    }
+    console.log(true&&false);
+    console.log(0.2>0&&0.2<1/3);
+    console.log(true||false);
+    console.log(!false);
+
+    /* Next lesson is truthy and falsy value */
+    if(0){
+      console.log('Truthy')
+    }else{
+      console.log('Falsy')
+    }
+    const cartQuantity=5;
+    if(cartQuantity){
+      console.log('Truthy')
+    }else{
+      console.log('Falsy')
+    }
+
+    const result=0 ? 'Truthy' : 'Falsy';
+    console.log(result);
+    false && console.log("Hello toancdu") /* Nothing happen */
+    false || console.log("Hello toancdu") /* Print Hello toancdu */
+    
+    const message=5&&'Hello toancdu'
+    console.log(message); /* Print Hello toancdu */
+
+    const currency='USD'||'VND'
+    const currency2=undefined||'VND'
+    console.log(currency); /* Print USD */
+    console.log(currency2); /* Print VND */
+    console.log(5==='5.00') /* do not use ==, its print wrong result */
+
+
+    /* Learning Truthy and falsy value */
+    if(0){
+      console.log('Truthy')
+    }
+      cartQuantity=5;
+    if(cartQuantity){
+      console.log('cart has products')
+    }
+    console.log(!0)
+    /* NaN value */
+    console.log('text'/5);
+
+    /* undefine value */
+    let valuable1=undefined;
+    console.log(valuable1);
+    /* ternary operators? (toan tu 3 ngoi) */
+    const reault=true ? 'truthy':'falsy';
+    console.log(result);
+    false && console.log('Hello toancdu')
+    const message2=5&&'Hello toancdu'
+    console.log(message);
+
+    const currency1='USD'||'VND'
+    const currency3=undefined||'VND'
+    console.log(currency); /* Print USD */
+    console.log(currency2); /* Print VND */
+    console.log(5==='5.00') /* do not use ==, its print wrong result */
+  </script> 
+</body>
+</html>

@@ -1,0 +1,15 @@
+#btn1{
+  color: red;
+  background-color: yellowgreen;
+  font-size: medium;
+  font-style: normal;
+  font-weight: bold;
+}
+.btn2{
+  color:green;
+  background-color: yellow;
+  font-size: medium;
+  font-style: normal;
+  font-weight: bold;
+}
+/* style="color: red; background-color: yellow; font-style:normal;font-weight: bold;"  */
